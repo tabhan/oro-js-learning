@@ -1,0 +1,13 @@
+layout:
+  actions:
+    - '@setBlockTheme':
+        themes: 'layout.html.twig'
+    - '@add':
+        id: countries
+        blockType: container
+        parentId: page_content
+        options:
+          attr:
+            data-page-component-module: acmeapp/js/app/components/country-region-component
+            data-page-component-options:
+              countries: '=context["countries"]'

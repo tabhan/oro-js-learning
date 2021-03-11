@@ -1,0 +1,24 @@
+#aliases:
+#  orouser/js/validator/password-complexity$: acmeapp/js/validator/password-complexity
+
+dynamic-imports:
+  orouser:
+    - acmeapp/js/app/components/country-region-component
+    - acmeapp/js/app/views/country-view
+    - acmeapp/js/app/views/region-view
+
+map:
+  "*":
+    orouser/js/validator/password-complexity: acmeapp/js/validator/password-complexity
+    oroform/js/app/views/form-validate-view: acmeapp/js/app/views/form-validate-view
+    jquery-ui/widgets/sortable: acmeapp/js/extend/jquery-ui/widgets/sortable
+  acmeapp/js/validator/password-complexity:
+    orouser/js/validator/password-complexity: orouser/js/validator/password-complexity
+  acmeapp/js/app/views/form-validate-view:
+    oroform/js/app/views/form-validate-view: oroform/js/app/views/form-validate-view
+  acmeapp/js/extend/jquery-ui/widgets/sortable:
+    jquery-ui/widgets/sortable: oroui/js/extend/jquery-ui/widgets/sortable
+
+configs:
+  acmeapp/js/extend/jquery-ui/widgets/sortable:
+    extend: true

@@ -1,0 +1,5 @@
+acme_frontend_country_api:
+  resource: "@ACMEAppBundle/Controller/Frontend/Api/Rest/CountryController.php"
+  type:     rest
+  options:
+    frontend: true

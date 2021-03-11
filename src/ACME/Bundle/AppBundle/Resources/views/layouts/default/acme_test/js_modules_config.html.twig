@@ -1,0 +1,6 @@
+{% block _test_js_modules_config_widget %}
+    {% import '@OroAsset/Asset.html.twig' as Asset %}
+    {{ Asset.js_modules_config({
+        'acmeapp/js/extend/jquery-ui/widgets/sortable': sortableConfig
+    }) }}
+{% endblock %}

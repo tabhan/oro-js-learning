@@ -1,0 +1,12 @@
+layout:
+  actions:
+    - '@setBlockTheme':
+        themes: js_modules_config.html.twig
+    - '@add':
+        id: test_js_modules_config
+        parentId: layout_js_modules_config
+        blockType: block
+        options:
+          vars:
+            sortableConfig:
+              extend: true

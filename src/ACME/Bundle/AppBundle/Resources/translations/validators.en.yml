@@ -1,0 +1,5 @@
+oro:
+  user:
+    message:
+      invalid_password:
+        same_with_email: Email should not be same with password.
